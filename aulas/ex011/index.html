@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+  <h1>Imagem Dinâmica</h1>  
+  <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+<!--adapte o tamanho das imagens de acordo com o dispositivo do seu usuário. o foco na experiência do usuário deve ser priorizado.-->
+<!--no exemplo abaixo você pode ver como as imagens são carregadas de acordo com o tamanho da tela-->
+  <picture>
+    <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="Imagem flexível">
+  </picture>
+  <!--utilizando a tag picture você trabalhar com imagens de tamanhos diferentes lembrando é claro que a base é o tamanho padrão que você quer carregar, acima dela você pode definir outras opções para telas menores.-->
+  <h1>Reproduzindo Aúdio</h1>
+  <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+  <!--<audio src="midia/girl-like-me.wav" controls autoplay></audio>-->
+
+  <!--existe navegadores que não suportam a tag audio, então é sempre bom fornecer uma alternativa-->
+
+  <audio preload="metadata" autoplay controls loop>
+  <source src="midia/girl-like-me.wav" type="audio/mpeg">
+  <source src="midia/girl-like-me.wav" type="audio/ogg">
+  <source src="midia/girl-like-me.wav" type="audio/wav">
+  <p>Infelizmente seu navegador não consegue reproduzir este áudio. <a href="midia/girl-like-me.wav">Clique aqui para baixar o arquivo Mp3</a></p>
+</audio>
+<!--no exemplo acima testamos alternativas para o seu navegador, se o navegador não suportar a tag audio, o usuário verá a mensagem de erro e poderá baixar o arquivo diretamente.-->
+
+<!--evite usar o arquivo wav por ser muito pesado, opte sempre pelo mp3 ou o ogg-->
+</body>
+</html>

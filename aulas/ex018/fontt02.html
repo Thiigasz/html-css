@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Frutti';
+            src: url('fontes/frutti.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+                Tipos de format()
+                - 'truetype'(ttf)
+                - 'opentype'(otf)
+                - 'woff'
+                - 'woff2'
+                - 'embedded-opentype'
+                - 'svg'
+                - 'truetype-aat (apple Advanced Typography)'
+            */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            
+        }
+
+        h1 {
+            font-family: 'Frutti', 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Título da Página</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, assumenda! Repellendus hic aliquam deleniti ipsum fugit dolorem eveniet aliquid, quisquam impedit, voluptate autem placeat in, eligendi ex? Aliquam, illum quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo ipsam ullam, eligendi sunt reiciendis magnam id. Quos porro, rem at impedit molestiae vero, accusamus quidem id libero, consequuntur cumque.</p>
+</body>
+</html>

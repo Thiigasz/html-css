@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body { /*safe font combinations*/
+            font-family: 'Work Sans', 'Arial', Arial, Helvetica, sans-serif; 
+            /* medidas absolutas (cm, mm, in, px, pt, pc) */
+            /* medidas relativas (em, ex, rem, vw, vh, %) */
+
+            font-size: 16px;
+             /* tamanho normal da fonte */
+            /* usar px ou em, são as medidas oficiais recomendadas */
+            /* 16px geralmente = 1em */
+
+            font-weight: normal; /* peso da fonte */
+            /* lighter normal bold bolder */
+
+            font-style: normal; /* estilo da fonte */
+            /* italic oblique */
+            text-decoration: none; /* decoração do texto */
+        }
+        h1 {
+            
+            /* shorthand font 
+            - font-style -> font-weight -> font size -> font-family 
+
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em 'Times New Roman', Times, serif;
+        }
+        
+        h2 {
+            font: italic normal 2em 'Georgia', serif;
+        }
+        p {
+            font-family: 'Georgia', serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laborum voluptatem reprehenderit repudiandae magni! Laudantium animi ad aperiam nulla repellendus vitae saepe accusamus impedit iste deleniti facilis, ipsum sunt quasi!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quo alias odit? Fuga, harum, deleniti ut odio beatae officia, tempore ab excepturi repudiandae ipsa amet repellendus laborum placeat velit quam.</p>
+    <h2>Subtítulo do Exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero explicabo temporibus fugit odit molestiae laboriosam magnam officia fugiat eaque. Ratione corrupti quo debitis maiores vero, magni hic tempora rerum iure?</p>
+</body>
+</html>

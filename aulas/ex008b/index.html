@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+  <h1>Outras Formatações</h1>
+  <h2>Código-fonte / Pré-formatação</h2>
+  <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p> <!--fonte mono-espaçada-->
+    <pre>
+        <code>
+            num = int(input("Digite um número: ")) 
+            if num % 2 == 0:
+                print("O número é par.")
+            else:
+                print("O número é ímpar.")
+            </code>
+    </pre>
+    <h2>Citações</h2>
+    <p>Como diria um pai de um amigo: "Se não puder ajudar, atrapalhe!"</p> <!--voce pode usar as aspas manualmente ou usar a tag q exemplo abaixo-->
+    <p>como diria minha mae: <q>Filho, estude para ser alguém na vida!</q></p> <!--Sempre optar por usar a tag q -->
+    <h2>Citações Completas</h2> <!--para citações mais longas, use a tag blockquote-->
+    <p>Segundo Paulo Coelho, no seu livro Brida:</p> <!--Usando a tag cite dentro da tag blockquote você pode fornecer mais contexto sobre a citação-->
+    <blockquote cite="https://www.amazon.com.br/Brida-Paulo-Coelho/dp/8584390693">
+        As decepções, as derrotas, o desânimo são ferramentas que Deus utiliza para mostrar a estrada.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!  </p> <!--usando a tag abbr você pode fornecer uma descrição mais longa para a abreviação-->
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+    <p><bdo dir="ltr">Esta é uma linha de texto normal.</bdo></p>
+    <!--essa tag BDO inverte a direção do texto (tag inútil, apenas para demonstração.)-->
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: #2b2a2a;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #2b2a2a;
+        }
+
+        tbody > tr:nth-child(2n) { /*efeito zebrado, colocando a cor de 2 em 2;
+            voce pode usar odd (ímpar [2n-1]) ou even(par [2n]) para zebrar sua tabela tbm */
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!-- Anatomia para tabelas grandes 
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <Thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </Thead>
+        <Tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.433.957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.602.865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.164.788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.075.181</td>
+            </tr>
+            <tr>
+                <td>Góias</td>
+                <td class="num">7.018.354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.144.597</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.018.654</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.018.127</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.506.853</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.484.486</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.337.357</td>
+            </tr>
+        </Tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus vero odio exercitationem tempore adipisci nemo beatae doloremque, numquam vel molestiae temporibus error tempora ex reprehenderit neque voluptatum quasi ratione nihil?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quasi quisquam quae ipsum officia animi aut eius accusamus repellat voluptatum, harum odio sed veniam voluptate. Corporis soluta pariatur numquam dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui unde impedit dolore fuga alias odit, officiis repellendus doloremque enim odio itaque blanditiis quo beatae dolores assumenda vero architecto laboriosam autem?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit culpa possimus quas laborum saepe necessitatibus quae reprehenderit fugit consequuntur, quam iusto alias provident! Ab tenetur obcaecati facilis sequi cupiditate adipisci. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero aliquid voluptates veritatis optio cum a veniam esse inventore facere, tempore neque, impedit et error quisquam placeat officiis praesentium enim perferendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam dolorem cum assumenda cumque saepe, nisi molestias tempore ullam iusto dolores corporis tempora totam voluptatem eaque itaque! Commodi voluptates dolor nihil.</p> 
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error sit accusamus voluptatem reprehenderit exercitationem, voluptates suscipit! Corporis, modi eveniet nulla quisquam cupiditate esse possimus voluptas ipsam, sequi ipsa, expedita quasi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae hic, quia temporibus non libero aspernatur voluptates exercitationem explicabo id cum reiciendis laboriosam nulla eum reprehenderit vero ducimus doloribus quisquam necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit deserunt ab molestias cumque, eveniet expedita ipsam vero ex assumenda perspiciatis dolorem. Nostrum inventore numquam in aliquam nesciunt dolorem quae eligendi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui ea, tenetur debitis velit, fugit aliquam voluptatem tempora similique ipsa facere sapiente itaque amet porro assumenda asperiores illum odio saepe ducimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas natus vitae facere possimus cum non consequatur. Qui, at. Autem, perspiciatis accusantium! Dignissimos porro, obcaecati consectetur dolore ex impedit culpa corrupti?</p>
+</body>
+</html>

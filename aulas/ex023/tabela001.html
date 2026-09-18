@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse; 
+        } /* tag usada para definir se quer a tabela junta ou separada */
+
+
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center; /* alinhamento horizontal */
+            vertical-align: middle; /* usando essa tag vc tbm consegue alinhar verticalmente usando top, middle e bottom; */
+        }
+
+        .numero {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--Hieraquia de Tabelas (simples) -> a hierarquia precisa ser obedecida se não os dados aparecem ou antes ou depois da tabela;
+        TABLE = Tabela;
+            TABLE ROW = linha de tabela;
+            TABLE DATA = dado de tabela;
+            OBS: as tags td, tr não são mais obrigatorias a terem o fechamento da tag (/td,/tr).
+    -->
+    <table>
+        <tr>  <!-- PRIMEIRA LINHA -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr> <!-- SEGUNDA LINHA -->
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+        </tr>
+        <tr> <!-- TERCEIRA LINHA -->
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
+        </tr>
+        <tr> <!-- QUARTA LINHA -->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>

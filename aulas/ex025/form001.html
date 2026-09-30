@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
-<body>
+<body>  <!--Método GET: se seus dados não forem sensíveis voce pode utilizar o GET;
+    Método Post: para dados sensíveis, envios de arquivos ou formulários extensos;-->
+    <!--Aprender HTTPS e criptografia para garantir a seguranca dos dados-->
     <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off"> <!--autocomplete voce usa caso não queira que o formulário sugira preenchimento-->
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
 </body>
 </html>
